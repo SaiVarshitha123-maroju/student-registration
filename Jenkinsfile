@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        DOCKER_CRED=credentials('docker-login')
+        DOCKER_CRED=credentials('dockerhub-login')
         DOCKER_IMG='student-registration'
         DOCKER_TAG='v1.0'
         DOCKER_USR='saivarshithamaroju'
